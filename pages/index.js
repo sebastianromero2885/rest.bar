@@ -42,7 +42,7 @@ export default function Home() {
           alignSelf="center"
           gap={1}
           onClick={() => {
-            router.push(`/mesa/${mesausuario}`);
+            router.push(`/mesa/[id]`,`/mesa/${mesausuario}`);
           }}
           >
             Elegí la mesa
