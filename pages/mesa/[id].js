@@ -1,4 +1,4 @@
-// import React from "react";
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../../styles/Home.module.css";
@@ -7,18 +7,18 @@ import { Box } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 
-export default function mesa() {
+export default function Mesa() {
   const router = useRouter();
   const id = router.query.id;
   const [mesa, setMesa] = useState(null);
   const [mesausuario, setMesausuario] = useState(null);
 
 
-  //  useEffect(() => {
-  //   if(router.isReady) {
-  //      setMesausuario(id)
-  //   }
-  //  }, [router.isReady]);
+   useEffect(() => {
+    if(router.isReady) {
+       setMesausuario(id)
+    }
+   }, [router.isReady]);
 
   return (
     <Box className={styles.container}>
