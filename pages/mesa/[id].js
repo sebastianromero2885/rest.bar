@@ -14,11 +14,11 @@ export default function mesa() {
   const [mesausuario, setMesausuario] = useState(null);
 
 
-   useEffect(() => {
-    if(router.isReady) {
-       setMesausuario(id)
-    }
-   }, [router.isReady]);
+  //  useEffect(() => {
+  //   if(router.isReady) {
+  //      setMesausuario(id)
+  //   }
+  //  }, [router.isReady]);
 
   return (
     <Box className={styles.container}>

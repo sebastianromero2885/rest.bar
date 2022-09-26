@@ -8,7 +8,6 @@ export default function Home() {
   const router = useRouter();
   const [mesausuario, setMesausuario] = useState("");
 
-  console.log(mesausuario);
   return (
     <Flex width={"100vw"} height={"100vh"} flexDir="column">
       <Center h={"20vh"}>
